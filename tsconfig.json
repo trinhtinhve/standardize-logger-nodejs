@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "ES2015",
+            "dom" //refer https://github.com/jindw/xmldom/issues/220
+        ],
+        "moduleResolution": "node",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "sourceMap": true,
+        "target": "ES2015",
+        "typeRoots": [
+            "./node_modules/@types",
+            "node_modules/"
+        ],
+        "types": [
+            "lodash",
+            "node"
+        ],
+        "baseUrl": ".",
+        "outDir": "./dist",
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "emitDecoratorMetadata": true,
+        "checkJs": false,
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/test/*"
+    ]
+}
